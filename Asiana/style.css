@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+header {
+  width: 100%;
+  background-color: #6d6e70;
+  height: 48px;
+  color: white;
+  position: relative;
+}
+header nav {
+  display: flex;
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+}
+main {
+  width: 1180px;
+  margin: 0 auto;
+}
+main h1 {
+  margin: 60px 0 50px 0;
+  font-size: 40px;
+  text-align: center;
+  font-weight: normal;
+  line-height: 1;
+}
