@@ -98,14 +98,11 @@ header nav div:not(:first-child)::after {
   padding: 20px 0 30px 10px;
   font-size: 15px;
 }
-.content .cont-sub-head span {
-  /* padding: 5px; */
-}
 .content .cont-sub-head span:first-child {
   border-bottom: 2px solid #d60815;
   color: #d60815;
 }
-.content .cont-body .intro {
+.content .intro {
   padding: 40px 440px 40px 50px;
   background-color: #e6e2df;
   background-image: url(https://flyasiana.com/C/pc/image/sub/baggage_visual_free.png);
@@ -113,10 +110,79 @@ header nav div:not(:first-child)::after {
   background-position: right bottom;
   min-height: 160px;
 }
-.content .cont-body .intro .intro-text {
+.content .intro .intro-text {
   font-size: 20px;
   line-height: 30px;
   margin-top: 50px;
-  font-weight: bold;
+  font-weight: 550;
   color: #222;
+}
+.content h2 {
+  margin: 50px 0 30px;
+  font-size: 28px;
+  color: #000;
+  line-height: 1;
+}
+.standard .standard-desc {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.standard .standard-desc button {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 0 10px;
+  font-size: 13px;
+  height: 34px;
+  border-radius: 3px;
+}
+.standard .standard-cont {
+  background-image: url(https://flyasiana.com/C/pc/image/sub/ico_bag_standard_free.png);
+  background-repeat: no-repeat;
+  background-position: right 100px bottom 30px;
+  min-height: 180px;
+  padding: 40px 440px 40px 50px;
+  border: 1px solid lightgray;
+  margin-bottom: 30px;
+}
+.possible .possible-cont {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+.possible .possible-cont div {
+  flex-grow: 1;
+}
+.possible .possible-cont .possible-cont-title {
+  text-align: center;
+  background-color: #6d6e70;
+  color: white;
+  padding: 10px 0;
+}
+.possible .possible-cont div:not(:last-child) {
+  border-right: 1px solid lightgray;
+}
+.possible .possible-cont .possible-cont-desc {
+  text-align: center;
+}
+.possible ul li {
+  margin: 10px 0;
+}
+.possible ul li::before {
+  display: inline-block;
+  content: '';
+  margin: -4px 10px 0 0;
+  width: 2px;
+  height: 2px;
+  background: #555;
+}
+.sub-title {
+  margin-bottom: 20px;
+  font-size: 23px;
+  line-height: 1;
+}
+.color-brown {
+  color: #ab7d55;
+}
+.color-red {
+  color: #d60815;
 }
