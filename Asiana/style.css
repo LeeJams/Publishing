@@ -158,22 +158,47 @@ header nav div:not(:first-child)::after {
   color: white;
   padding: 10px 0;
 }
-.possible .possible-cont div:not(:last-child) {
+.possible .possible-cont > div:not(:last-child) {
   border-right: 1px solid lightgray;
 }
 .possible .possible-cont .possible-cont-desc {
   text-align: center;
+  padding: 40px 0;
 }
 .possible ul li {
   margin: 10px 0;
 }
 .possible ul li::before {
   display: inline-block;
-  content: '';
+  content: "";
   margin: -4px 10px 0 0;
   width: 2px;
   height: 2px;
   background: #555;
+}
+.career-img {
+  margin-bottom: 20px;
+}
+.career-img .career32{
+  display: inline-block;
+  width: 65px;
+  height: 97px;
+  background: url(./icoset_baggage.png) 0 0 no-repeat;
+  text-indent: -9999px;
+}
+.career-img .career23{
+  display: inline-block;
+  width: 65px;
+  height: 97px;
+  background: url(./icoset_baggage.png) -72px 0 no-repeat;
+  text-indent: -9999px;
+}
+.career-img .youth{
+  display: inline-block;
+  width: 73px;
+  height: 97px;
+  background: url(./icoset_baggage.png) -347px 0 no-repeat;
+  text-indent: -9999px;
 }
 .sub-title {
   margin-bottom: 20px;
