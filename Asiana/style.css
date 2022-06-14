@@ -1,20 +1,46 @@
 @charset "utf-8";
-.content {
-  width: 1200px;
-  margin: 0 auto;
+
+/*
+display
+list-style
+position
+float
+clear
+width/height
+margin/padding
+background
+color/font
+taxt-align/vertical-align
+text-decoration
+border
+bpx-sizing
+white-space
+other text
+content
+*/
+
+/* common */
+.color-brown {
+  color: #ab7d55;
 }
+.color-red {
+  color: #d60815;
+}
+
+/* layout */
+.content {width: 1200px;margin: 0 auto;}
 .content h1 {
   margin: 60px 0 50px 0;
   font-size: 38px;
-  text-align: center;
   font-weight: normal;
+  text-align: center;
   line-height: 1;
 }
 header {
   width: 100%;
   background-color: #6d6e70;
   height: 48px;
-  color: white;
+  color: #fff;
   position: relative;
 }
 header nav {
@@ -25,6 +51,7 @@ header nav {
 }
 header nav div {
   display: flex;
+  position: relative;
   align-items: center;
   cursor: pointer;
 }
@@ -44,20 +71,23 @@ header nav div:hover {
   background-color: rgb(68, 67, 67);
 }
 header nav div:not(:first-child)::after {
-  content: "";
   display: inline-block;
-  /* position: absolute;
-  right: 0; */
-  width: 50px;
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 12px;
   height: 8px;
-  background-image: url(https://flyasiana.com/C/pc/image/common/ico_loca_arrow.png);
-  background-repeat: no-repeat;
-  background-position-x: center;
+  background: url(https://flyasiana.com/C/pc/image/common/ico_loca_arrow.png) 0 0 no-repeat;
+  overflow: hidden;
+  transition: all .4s;
+}
+header nav div:not(:first-child):hover::after {
+  /* background-position: 0 -8px; */
+  transform: rotate(-180deg);
 }
 .content .cont-head {
-  border-top: 1px solid #6d6e70;
-  border-left: 1px solid #6d6e70;
-  border-right: 1px solid #6d6e70;
+  border: 1px solid #6d6e70;
+  border-bottom: none;
 }
 .content .cont-head nav {
   display: flex;
@@ -204,10 +234,4 @@ header nav div:not(:first-child)::after {
   margin-bottom: 20px;
   font-size: 23px;
   line-height: 1;
-}
-.color-brown {
-  color: #ab7d55;
-}
-.color-red {
-  color: #d60815;
 }
