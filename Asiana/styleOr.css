@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/*
+display
+list-style
+position
+float
+clear
+width/height
+margin/padding
+background
+color/font
+taxt-align/vertical-align
+text-decoration
+border
+bpx-sizing
+white-space
+other text
+content
+*/
+
+/* common */
+.color-brown {
+  color: #ab7d55;
+}
+.color-red {
+  color: #d60815;
+}
+
+/* layout */
+.content {width: 1200px;margin: 0 auto;}
+.content h1 {
+  margin: 60px 0 50px 0;
+  font-size: 38px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1;
+}
+header {
+  width: 100%;
+  background-color: #6d6e70;
+  height: 48px;
+  color: #fff;
+  position: relative;
+}
+header nav {
+  display: flex;
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+header nav div {
+  display: flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+}
+header nav div:first-child {
+  width: 50px;
+  justify-content: center;
+  background-color: #5f6062;
+}
+header nav div:not(:first-child) {
+  width: 210px;
+  padding: 0 50px 0 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-right: 0.7px solid rgb(141, 141, 141);
+}
+header nav div:hover {
+  background-color: rgb(68, 67, 67);
+}
+header nav div:not(:first-child)::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 12px;
+  height: 8px;
+  background: url(https://flyasiana.com/C/pc/image/common/ico_loca_arrow.png) 0 0 no-repeat;
+  overflow: hidden;
+  transition: all .4s;
+}
+header nav div:not(:first-child):hover::after {
+  /* background-position: 0 -8px; */
+  transform: rotate(-180deg);
+}
+.content .cont-head {
+  border: 1px solid #6d6e70;
+  border-bottom: none;
+}
+.content .cont-head nav {
+  display: flex;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.content .cont-head nav div {
+  flex-grow: 1;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .cont-head nav div:first-child::before {
+  content: "";
+  display: inline-block;
+  /* position: absolute;
+  right: 0; */
+  width: 30px;
+  height: 15px;
+  background-image: url(https://flyasiana.com/C/pc/image/common/ico_tab_on.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.content .cont-head nav div:not(:first-child) {
+  background-color: #6d6e70;
+  color: white;
+}
+.content .cont-head nav div:not(:first-child):hover {
+  background-color: rgb(68, 67, 67);
+}
+.content .cont-head nav div:not(:first-child):not(:last-child) {
+  border-right: 1px solid rgb(255, 255, 255);
+}
+.content .cont-sub-head {
+  padding: 20px 0 30px 10px;
+  font-size: 15px;
+}
+.content .cont-sub-head span:first-child {
+  border-bottom: 2px solid #d60815;
+  color: #d60815;
+}
+.content .intro {
+  padding: 40px 440px 40px 50px;
+  background-color: #e6e2df;
+  background-image: url(https://flyasiana.com/C/pc/image/sub/baggage_visual_free.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  min-height: 160px;
+}
+.content .intro .intro-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 50px;
+  font-weight: 550;
+  color: #222;
+}
+.content h2 {
+  margin: 50px 0 30px;
+  font-size: 28px;
+  color: #000;
+  line-height: 1;
+}
+.standard .standard-desc {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.standard .standard-desc button {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 0 10px;
+  font-size: 13px;
+  height: 34px;
+  border-radius: 3px;
+}
+.standard .standard-cont {
+  background-image: url(https://flyasiana.com/C/pc/image/sub/ico_bag_standard_free.png);
+  background-repeat: no-repeat;
+  background-position: right 100px bottom 30px;
+  min-height: 180px;
+  padding: 40px 440px 40px 50px;
+  border: 1px solid lightgray;
+  margin-bottom: 30px;
+}
+.possible .possible-cont {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+.possible .possible-cont div {
+  flex-grow: 1;
+}
+.possible .possible-cont .possible-cont-title {
+  text-align: center;
+  background-color: #6d6e70;
+  color: white;
+  padding: 10px 0;
+}
+.possible .possible-cont > div:not(:last-child) {
+  border-right: 1px solid lightgray;
+}
+.possible .possible-cont .possible-cont-desc {
+  text-align: center;
+  padding: 40px 0;
+}
+.possible ul li {
+  margin: 10px 0;
+}
+.possible ul li::before {
+  display: inline-block;
+  content: "";
+  margin: -4px 10px 0 0;
+  width: 2px;
+  height: 2px;
+  background: #555;
+}
+.career-img {
+  margin-bottom: 20px;
+}
+.career-img .career32{
+  display: inline-block;
+  width: 65px;
+  height: 97px;
+  background: url(./icoset_baggage.png) 0 0 no-repeat;
+  text-indent: -9999px;
+}
+.career-img .career23{
+  display: inline-block;
+  width: 65px;
+  height: 97px;
+  background: url(./icoset_baggage.png) -72px 0 no-repeat;
+  text-indent: -9999px;
+}
+.career-img .youth{
+  display: inline-block;
+  width: 73px;
+  height: 97px;
+  background: url(./icoset_baggage.png) -347px 0 no-repeat;
+  text-indent: -9999px;
+}
+.sub-title {
+  margin-bottom: 20px;
+  font-size: 23px;
+  line-height: 1;
+}

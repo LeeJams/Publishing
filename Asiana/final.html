@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>무료 수하물 | 아시아나항공</title>
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="styleOr.css">
+  <link rel="stylesheet" href="style.css">
   <!-- meta 정보 author, description, keywords 등 더 넣으면 좋을것같아요 -->
   <!-- 보통 폴더구조는 프로젝트명 또는 publish > html / css / js / images 또는 img 이런식으로 가요
         프로젝트명은 Asiana 대문자 사용안하고 asiana 이런식으로 주세요.
@@ -15,68 +15,37 @@
 </head>
 
 <body>
-  <!-- 주석 사용해주세요 -->
-  <!-- div.wrap으로 크게 한번 감싸주세요(국룰) -->
   <div class="wrap">
-    <header>
-      <!-- header는 최상위 메뉴 사용할때 써요 -->
-      <!-- section태그나 div태그 사용하시고 .location 또는 .breadcrumb 클래스 네이밍 지어주세요 -->
-      <nav><!-- 로케이션 UI는 nav태그보다 ul li 태그 사용을 권장해요. -->
-        <div>
+    <!-- START: Location Bar -->
+    <div class="location-bar">
+      <ul>
+        <li>
           <img src="https://flyasiana.com/C/pc/image/common/ico_loca_home.png" alt="">
-        </div>
-        <div><span>여행 준비</span>
-        </div>
-        <div><span>수하물</span></div>
-        <div><span>위탁 수하물</span></div>
-      </nav>
-    </header>
-    <main class="content">
-      <!-- 
-        * main 태그란?
-          1. <main> 태그 안의 내용은 웹문서에서 유일한 내용이여야 함. ==> 메인페이지에서만 사용하는걸 권장해요
-          즉, 사이드바, 네비게이션 링크, 저작권 정보, 사이트 로고, 검색 창 등 
-          여러 페이지에 걸쳐 나타나는 내용이 오면 안 됨.
-          2. <main> 태그는 오직 웹문서에서 한번만 사용해야 함. 
-          즉, 2개 이상 사용하면 안 됨.
-          3. <main> 태그는 <article>, <aside>, <footer>, <header>, <nav> 등의 자식 요소로 들어가면 안 됨.
-
-        div.content 또는 div.container로 권장해요
-      -->
+        </li>
+        <li><span>여행 준비</span>
+        </li>
+        <li><span>수하물</span></li>
+        <li><span>위탁 수하물</span></li>
+      </ul>
+    </div>
+    <!-- END: Location Bar -->
+    <div class="content">
       <h1>위탁 수하물</h1>
 
       <!--
-        * section 태그란?
-          연관된 문서의 독립적 단락을 정의할 때 사용.
-          ※ 제목 보통 포함하나, 필수 아님.
-          ※ (chapters, headers, footers 등)에서 문서 단락 정의.
-          ※ box 역할하는 block 요소임. 내용 없으면 아무 것도 안 보임.
-
-          1. <section> 태그 안에 <main> 태그 사용 금지.
-          <main> 태그 안에서 <setion> 태그 사용 가능.
-
-          2. 연관된 문서의 단락이 아닌, 일반 컨테이너로 사용 금지. 
-          특히, 단순 스타일 줄 목적이면, <div> 태그 사용할 것.
-
-          3. <section> 태그 안에는 아래 태그들 사용 가능.
-          ・<header> : 1개만 가능.
-          ・<article> : 여러 개 가능.
-          ・<footer> : 1개만 가능.
-            
           4. section 태그를 사용할때는 하위에 제목태그 h2~h6 최소 한개는 사용해야 해요.
             디자인이 tab UI라 div.tab > div.tab-head + div. tab-cont 이런식으로 권장해요
       -->
-      <section class="cont-head">
-        <nav>
-          <!-- 일반적으로 링크로 갈경우에 a태그 사용 / 링크가 아닌 스크립트 동작방식일 경우에 button태그 사용합니다. -->
-          <div><span>무료 수하물</span></div>
-          <div><span>초과 수하물</span></div>
-          <div><span>공동운항 수하물</span></div>
-          <div><span>특수 수하물</span></div>
-          <div><span>환승 수하물</span></div>
-        </nav>
-      </section>
-      <section class="cont-sub-head">
+      <!-- START: Content Tab -->
+      <div class="cont-tab">
+        <button>무료 수하물</button>
+        <button>초과 수하물</button>
+        <button>공동운항 수하물</button>
+        <button>특수 수하물</button>
+        <button>환승 수하물</button>
+      </div>
+      <!-- END: Content Tab -->
+      <section class="cont-sub-tab">
         <nav>
           <span>국제선</span>
           <span>|</span>
@@ -164,7 +133,7 @@
           </ul>
         </div>
       </section>
-    </main>
+    </div>
     <footer></footer>
   </div>
 </body>

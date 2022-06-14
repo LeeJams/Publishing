@@ -31,7 +31,14 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 button {
-	cursor: pointer;
+	background: inherit; 
+	border:none; 
+	box-shadow:none; 
+	border-radius:0; 
+	padding:0; 
+	overflow:visible; 
+	cursor:pointer;
+	font-family: 'Noto Sans KR','AppeGothic','Malgun Gothic','맑은 고딕','돋음','Dotum','Apple SD Gothic Neo',Arial,Helvetica,sans-serif;
 }
 body {
 	line-height: 1;
