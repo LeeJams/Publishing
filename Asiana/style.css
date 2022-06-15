@@ -21,8 +21,13 @@ content
 
 /* common */
 .color-brown { color: #ab7d55; } 
-
 .color-red { color: #d60815; } 
+.color-gray { color: #6d6e70; } 
+
+.sub-title { margin-bottom: 20px; font-size: 23px; line-height: 1; } 
+
+.list-dot li {margin: 10px 0;}
+.list-dot li::before { display: inline-block; content: ""; margin: -4px 10px 0 0; width: 2px; height: 2px; background: #555; } 
 
 /* layout */
 .content { width: 1200px; margin: 0 auto; } 
@@ -44,26 +49,26 @@ content
 .content .cont-tab button:not(:first-child):not(:last-child) { border-right: 1px solid rgb(255, 255, 255); } 
 
 .content .cont-sub-tab { padding: 20px 0 30px 10px; font-size: 15px; } 
-.content .cont-sub-tab span:first-child { border-bottom: 2px solid #d60815; color: #d60815; } 
+.content .cont-sub-tab ul { display: flex; } 
+.content .cont-sub-tab ul li { margin: 0 8px; position: relative; } 
+.content .cont-sub-tab ul li:not(:first-child)::before { content: ""; position: absolute; width: 1px; height: 16px; top: 3px; left: -7px; background: #ddd; } 
+.content .cont-sub-tab ul li:first-child { border-bottom: 2px solid #d60815; color: #d60815; } 
 
-.content .intro { padding: 40px 440px 40px 50px; background-color: #e6e2df; background-image: url(https://flyasiana.com/C/pc/image/sub/baggage_visual_free.png); background-repeat: no-repeat; background-position: right bottom; min-height: 160px; } 
-.content .intro .intro-text { font-size: 20px; line-height: 30px; margin-top: 50px; font-weight: 550; color: #222; } 
-.content h2 { margin: 50px 0 30px; font-size: 28px; color: #000; line-height: 1; } 
+.content h2 { margin: 50px 0 30px; font-size: 28px; color: #000; line-height: 1; font-weight: bold; } 
+.content .visual-banner { padding: 40px 440px 40px 50px; background-color: #e6e2df; background-image: url(https://flyasiana.com/C/pc/image/sub/baggage_visual_free.png); background-repeat: no-repeat; background-position: right bottom; min-height: 160px; } 
+.content .visual-banner .visual-banner-text { font-size: 20px; line-height: 30px; margin-top: 50px; font-weight: 550; color: #222; } 
 
 .standard .standard-desc { display: flex; justify-content: space-between; margin-bottom: 35px; } 
 .standard .standard-desc button { background-color: white; border: 1px solid lightgray; padding: 0 10px; font-size: 13px; height: 34px; border-radius: 3px; } 
-.standard .standard-cont { background-image: url(https://flyasiana.com/C/pc/image/sub/ico_bag_standard_free.png); background-repeat: no-repeat; background-position: right 100px bottom 30px; min-height: 180px; padding: 40px 440px 40px 50px; border: 1px solid lightgray; margin-bottom: 30px; } 
+.standard .standard-cont { background-image: url(https://flyasiana.com/C/pc/image/sub/ico_bag_standard_free.png); background-repeat: no-repeat; background-position: right 100px bottom 30px; min-height: 180px; padding: 40px 440px 40px 50px; border: 1px solid lightgray; } 
 
-.possible .possible-cont { display: flex; border-bottom: 1px solid lightgray; } 
-.possible .possible-cont div { flex-grow: 1; } 
-.possible .possible-cont .possible-cont-title { text-align: center; background-color: #6d6e70; color: white; padding: 10px 0; } 
-.possible .possible-cont > div:not(:last-child) { border-right: 1px solid lightgray; } 
-.possible .possible-cont .possible-cont-desc { text-align: center; padding: 40px 0; } 
-.possible ul li { margin: 10px 0; } 
-.possible ul li::before { display: inline-block; content: ""; margin: -4px 10px 0 0; width: 2px; height: 2px; background: #555; } 
+
+.career-table { width: 100%; text-align: center; border-bottom: 1px solid #c2c2c2; } 
+.career-table thead { background: #6d6d6d; color: #fff; } 
+.career-table thead tr th { padding: 10px 0; } 
+.career-table tbody tr td { padding: 40px 0; } 
 
 .career-img { margin-bottom: 20px; } 
 .career-img .career32 { display: inline-block; width: 65px; height: 97px; background: url(./icoset_baggage.png) 0 0 no-repeat; text-indent: -9999px; } 
 .career-img .career23 { display: inline-block; width: 65px; height: 97px; background: url(./icoset_baggage.png) -72px 0 no-repeat; text-indent: -9999px; } 
 .career-img .youth { display: inline-block; width: 73px; height: 97px; background: url(./icoset_baggage.png) -347px 0 no-repeat; text-indent: -9999px; } 
-.sub-title { margin-bottom: 20px; font-size: 23px; line-height: 1; } 

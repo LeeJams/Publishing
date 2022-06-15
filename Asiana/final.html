@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- lang="ko" -->
+<html lang="en">
+<!-- lang="ko" -->
 
 <head>
   <meta charset="UTF-8">
@@ -45,94 +46,102 @@
         <button>환승 수하물</button>
       </div>
       <!-- END: Content Tab -->
-      <section class="cont-sub-tab">
-        <nav>
-          <span>국제선</span>
-          <span>|</span>
-          <span>국내선</span>
-          <span>|</span>
-          <span>회원등급별 허용량</span>
-        </nav>
-      </section>
-      <section class="intro">
+      <div class="cont-sub-tab">
+        <ul>
+          <li>국제선</li>
+          <li>국내선</li>
+          <li>회원등급별 허용량</li>
+        </ul>
+      </div>
+      <div class="visual-banner">
         <!-- 보통 이부분은 visual-banner 라고 불러요 네이밍도 이런식으로 가면 되요
               intro페이지는 따로 생성될 수도 있어서 그페이지에서 intro라고 선언해요 -->
-        <div class="intro-text">
+        <div class="visual-banner-text">
           <p>고객님의 편안한 여행을 위해 꼭 필요한 수하물 관련 정보를 안내해드립니다.</p>
           <p>아래에서 무료수하물 허용량을 확인할 수 있습니다.</p>
         </div>
-      </section>
-      <section class="standard">
+      </div>
+      <div class="standard">
         <h2>국제선 이용 시 무료수하물 허용기준</h2>
         <div class="standard-desc">
           <div>
-            <!-- 문맥상 내용이 이어지기 때문에 p태그 하나만 사용해서 br로 줄바꿈 해줍니다. -->
-            <p>타 항공사로 연결 시 <span class="color-brown">해당 항공사의 무료수하물 허용량 기준이 당사와 상이</span>할 수 있습니다.</p>
-            <p>수하물 위탁은 출국장 입장 전 체크인(수속) 카운터 또는 자동 수하물 위탁 기기에서만 가능합니다.</p>
+            <p>타 항공사로 연결 시 <span class="color-brown">해당 항공사의 무료수하물 허용량 기준이 당사와 상이</span>할 수 있습니다.
+              <br />수하물 위탁은 출국장 입장 전 체크인(수속) 카운터 또는 자동 수하물 위탁 기기에서만 가능합니다.
+            </p>
           </div>
-          <button>수하물 계산기</button><!-- 확장성을 생각하면 버튼이 여러개 나올수있기때문에 div로 하나 감싸주는게 좋아요. -->
+          <div>
+            <button>수하물 계산기</button>
+          </div>
         </div>
         <div class="standard-cont">
-          <p class="sub-title"><!-- 해당 부분은 제목+내용으로 dl dt dd 사용하거나 h3 + p로 권장합니다. -->
-            허용 규격
-          </p>
-          <p class="color-red">크기(삼변의 길이의 합) : A+B+C= 158cm 이내 (손잡이와 바퀴 포함)</p>
-          <p>이용하시는 클래스에 상관없이 한 개의 최대 사이즈 158cm입니다.</p>
+          <dl>
+            <dt><h3 class="sub-title">허용 규격</h3></dt>
+            <dd>
+              <span class="color-red">크기(삼변의 길이의 합) : A+B+C= 158cm 이내 (손잡이와 바퀴 포함)</span>
+              <br />이용하시는 클래스에 상관없이 한 개의 최대 사이즈 158cm입니다.
+            </dd>
+          </dl>
         </div>
-      </section>
-      <section class="possible">
+      </div>
+      <div class="possible">
         <h2>구간별 무료수하물 허용량</h2>
         <div>
-          <p class="sub-title"><!-- 해당 부분은 제목+내용으로 h3으로 권장합니다. -->
+          <h3 class="sub-title">
             미주 구간
-          </p>
-          <div class="possible-cont"><!-- 해당 UI는 table 또는 ul을 권장합니다. 클래스네이밍도 공통으로 사용하기때문에 .table 또는 .tbl -->
-            <div>
-              <div class="possible-cont-title">
-                비즈니스 클래스<br />(성인,소아*)
-              </div>
-              <div class="possible-cont-desc">
-                <div class="career-img">
+          </h3>
+          <table class="career-table">
+            <!-- <caption>
+              <strong>미주 구간 무료수하물 허용량 표</strong>
+              <p>비즈니스 클래스 (성인,소아*),이코노미 클래스 (성인,소아*),Infant (유아)로 구성된 표입니다.</p>
+            </caption> -->
+            <colgroup>
+              <col span="3">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">비즈니스 클래스<br />(성인,소아*)</th>
+                <th scope="col">이코노미 클래스<br />(성인,소아*)</th>
+                <th scope="col">Infant<br />(유아)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="career-img">
                   <span class="career32">32kg(70lbs)</span>
                   <span class="career32">32kg(70lbs)</span>
                 </div>
                 <p>무게 : <span class="color-red">32kg</span>(70lbs) 이내</p>
-                <p>허용 개수 : <span class="color-red">2개</span></p>
-              </div>
-            </div>
-            <div>
-              <div class="possible-cont-title">
-                이코노미 클래스<br />(성인,소아*)
-              </div>
-              <div class="possible-cont-desc">
-                <div class="career-img">
-                  <span class="career23">23kg(50lbs)</span>
-                  <span class="career23">23kg(50lbs)</span>
-                </div>
-                <p>무게 : <span class="color-red">23kg</span>(50lbs) 이내</p>
-                <p>허용 개수 : <span class="color-red">2개</span></p>
-              </div>
-            </div>
-            <div>
-              <div class="possible-cont-title">
-                Infant<br />(유아)
-              </div>
-              <div class="possible-cont-desc">
-                <div class="career-img">
-                  <span class="career23">23kg(50lbs)</span>
-                  <span class="youth">23kg(50lbs)</span>
-                </div>
-                <p>무게 : <span class="color-red">23kg</span>(50lbs) 이내</p><!-- p태그 하나만 사용하거나 ul 사용 권장합니다. -->
-                <p>허용 개수 : <span class="color-red">2개</span></p>
-              </div>
-            </div>
-          </div>
-          <ul><!-- 해당 디자인은 공통이 많기때문에 공통 클래스 따면 좋아요. list-style list-dot 이런식으로요 -->
+                <p>허용 개수 : <span class="color-red">2개</span></p></td>
+                <td>
+                  <div class="possible-cont-desc">
+                    <div class="career-img">
+                      <span class="career23">23kg(50lbs)</span>
+                      <span class="career23">23kg(50lbs)</span>
+                    </div>
+                    <p>무게 : <span class="color-red">23kg</span>(50lbs) 이내</p>
+                    <p>허용 개수 : <span class="color-red">2개</span></p>
+                  </div>
+                </td>
+                <td>
+                  <div class="possible-cont-desc">
+                    <div class="career-img">
+                      <span class="career23">23kg(50lbs)</span>
+                      <span class="youth">23kg(50lbs)</span>
+                    </div>
+                    <p>무게 : <span class="color-red">23kg</span>(50lbs) 이내</p><!-- p태그 하나만 사용하거나 ul 사용 권장합니다. -->
+                    <p>허용 개수 : <span class="color-red">2개</span></p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="list-dot">
+            <!-- 해당 디자인은 공통이 많기때문에 공통 클래스 따면 좋아요. list-style list-dot 이런식으로요 -->
             <li>소아/유아의 경우, 휴대용 유모차, 보행기, 카시트, 운반용 요람 중 1개 추가 가능</li>
             <li>비즈니스 스위트 탑승 시 비즈니스 클래스 규정 적용</li>
           </ul>
         </div>
-      </section>
+      </div>
     </div>
     <footer></footer>
   </div>
